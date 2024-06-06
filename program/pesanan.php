@@ -13,7 +13,7 @@
 <body style="height: 3000px">
     <!--header-->
     <?php include "header.php"; ?>
-    <!--header-->
+    <!--penutup header-->
     <div class="container-lg">
         <div class="row">
             <!--Sidebar -->
@@ -24,7 +24,7 @@
             <div class="col-lg-9 mt-2">
                 <div class="card">
                     <div class="card-header">
-                        Home
+                        Pesanan
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
@@ -40,7 +40,6 @@
             Copyright 2024 Anak Emak
         </div>
     </div>
-
 </body>
 
 </html>
