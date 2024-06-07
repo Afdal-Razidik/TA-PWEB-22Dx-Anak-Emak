@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Signin Template · Bootstrap v5.2</title>
+    <title>Kantin Emak</title>
 
 
 
@@ -74,19 +74,21 @@
 <body class="text-center">
 
     <main class="form-signin w-100 m-auto">
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" novalidate action="proccess/proses_login.php" method="POST">
             <img class="mb-4" src="assets/img/food.png" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input name="username" type="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
                 <div class="invalid-feedback">
                     Email tidak valid
                 </div>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    required>
                 <label for="floatingPassword">Password</label>
                 <div class="invalid-feedback">
                     Masukkan password
@@ -98,7 +100,8 @@
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit_validate"
+                value="abcd">Login</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
         </form>
     </main>

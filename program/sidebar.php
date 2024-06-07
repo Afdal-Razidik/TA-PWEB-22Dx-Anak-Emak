@@ -14,7 +14,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'beranda') ? 'active link-light' : 'link-dark' ; ?>"
+                            <a class="nav-link <?php echo ((isset($_GET['x']) && $_GET['x'] == 'beranda') || !isset($_GET['x'])) ? 'active link-light' : 'link-dark' ; ?>"
                                 aria-current="page" href="beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
