@@ -14,19 +14,24 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="index.php">Beranda</a>
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'beranda') ? 'active link-light' : 'link-dark' ; ?>"
+                                aria-current="page" href="beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark" href="pesanan.php">Pesanan</a>
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'pesanan') ? 'active link-light' : 'link-dark' ; ?>"
+                                href="pesanan">Pesanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark" href="konsumen.php">Konsumen</a>
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'konsumen') ? 'active link-light' : 'link-dark' ; ?>"
+                                href="konsumen">Konsumen</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark" href="produk.php">Produk</a>
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'produk') ? 'active link-light' : 'link-dark' ; ?>"
+                                href="produk">Produk</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-dark" href="laporan.php">Laporan</a>
+                            <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'laporan') ? 'active link-light' : 'link-dark' ; ?>"
+                                href="laporan">Laporan</a>
                         </li>
                     </ul>
 

@@ -21,19 +21,20 @@
             <!-- End sidebar -->
 
             <!-- Content -->
-            <div class="col-lg-9 mt-2">
-                <div class="card">
-                    <div class="card-header">
-                        Home
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
 
+            <?php 
+                if (isset($_GET['x']) && $_GET['x'] == 'beranda'){
+                    include "beranda.php";
+                }elseif(isset($_GET['x']) && $_GET['x'] == 'konsumen'){
+                    include "konsumen.php";
+                }elseif(isset($_GET['x']) && $_GET['x'] == 'pesanan'){
+                    include "pesanan.php";
+                }elseif(isset($_GET['x']) && $_GET['x'] == 'produk'){
+                    include "produk.php";
+                }elseif(isset($_GET['x']) && $_GET['x'] == 'laporan'){
+                    include "laporan.php";
+                }
+            ?>
             <!-- End Content -->
         </div>
         <div class="fixed-bottom text-center">

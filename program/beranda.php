@@ -1,7 +1,7 @@
 <div class="col-lg-9 mt-2">
     <div class="card">
         <div class="card-header">
-            Produk
+            Home
         </div>
         <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
