@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+    if(empty($_SESSION['username_kantin'])){
+        header('location:login');
+    }
+?>
 <html lang="en">
 
 <head>

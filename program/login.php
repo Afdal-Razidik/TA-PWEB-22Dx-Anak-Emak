@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if(!empty($_SESSION['username_kantin'])){
+        header('location:home');
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
